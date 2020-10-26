@@ -1,35 +1,49 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.*;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
     WebDriver driver;
-    public static final String USERNAME = "pecebbevse1";
-    public static final String AUTOMATE_KEY = "RCm2s4XXRqLTEsCdbfMh";
-    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
+    @Parameters({"browser"})
     @BeforeClass
-    public void setup() throws Exception {
-        //System.setProperty("webdriver.gecko.driver", "D:\\Guru99\\bin\\geckodriver.exe");
-        //driver = new FirefoxDriver();
-        System.setProperty("webdriver.chrome.driver", "D:\\Guru99\\bin\\chromedriver.exe");
-        driver = new ChromeDriver();
-        //System.setProperty("webdriver.edge.driver", "D:\\Guru99\\bin\\msedgedriver.exe");
-        //driver = new EdgeDriver();
+    public void setUp(String browser) {
+        if (browser.equalsIgnoreCase("Chrome")) {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+        } else if (browser.equalsIgnoreCase("Firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
+        } else if (browser.equalsIgnoreCase("Edge")) {
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
+        } else if (browser.equalsIgnoreCase("IE")) {
+            System.setProperty("wdm.architecture", "X32");
+            WebDriverManager.iedriver().setup();
+            driver = new InternetExplorerDriver();
+        } else throw new NoSuchElementException("Wrong browser parameter");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://www.demo.guru99.com/V4/");
+
+            /*System.setProperty("wdm.architecture", "X32");
+            WebDriverManager.iedriver().setup();
+            driver = new InternetExplorerDriver();
+            //System.setProperty("webdriver.gecko.driver", "D:\\Guru99\\bin\\geckodriver.exe");
+            //driver = new FirefoxDriver();
+            //System.setProperty("webdriver.chrome.driver", "D:\\Guru99\\bin\\chromedriver.exe");
+            //driver = new ChromeDriver();
+            //System.setProperty("webdriver.edge.driver", "D:\\Guru99\\bin\\msedgedriver.exe");
+            //driver = new EdgeDriver();
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
     }
 
     /*@Parameters({"Port"})
@@ -147,7 +161,9 @@ public class BaseTest {
     }*/
 
     @AfterClass
-    public void teardown() throws Exception {
-        driver.quit();
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
