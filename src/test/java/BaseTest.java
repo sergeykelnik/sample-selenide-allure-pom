@@ -5,15 +5,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
     WebDriver driver;
 
-    @Parameters({"browser"})
+    /*@Parameters({"browser"})
     @BeforeClass
     public void setUp(String browser) {
         if (browser.equalsIgnoreCase("Chrome")) {
@@ -25,41 +30,38 @@ public class BaseTest {
         } else if (browser.equalsIgnoreCase("Edge")) {
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();
+        } else if (browser.equalsIgnoreCase("Opera")) {
+            WebDriverManager.operadriver().setup();
+            driver = new OperaDriver();
         } else if (browser.equalsIgnoreCase("IE")) {
             System.setProperty("wdm.architecture", "X32");
             WebDriverManager.iedriver().setup();
             driver = new InternetExplorerDriver();
         } else throw new NoSuchElementException("Wrong browser parameter");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    }*/
 
-            /*System.setProperty("wdm.architecture", "X32");
+    @Parameters({"browser"})
+    @BeforeClass
+    public void initiateDriver(String browser) throws MalformedURLException {
+        if (browser.equalsIgnoreCase("Chrome")) {
+            driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), DesiredCapabilities.chrome());
+        } else if (browser.equalsIgnoreCase("Firefox")) {
+            driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), DesiredCapabilities.firefox());
+        } else if (browser.equalsIgnoreCase("Opera")) {
+            driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), DesiredCapabilities.operaBlink());
+        } else if (browser.equalsIgnoreCase("Edge")) {
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
+        } else if (browser.equalsIgnoreCase("IE")) {
+            System.setProperty("wdm.architecture", "X32");
             WebDriverManager.iedriver().setup();
             driver = new InternetExplorerDriver();
-            //System.setProperty("webdriver.gecko.driver", "D:\\Guru99\\bin\\geckodriver.exe");
-            //driver = new FirefoxDriver();
-            //System.setProperty("webdriver.chrome.driver", "D:\\Guru99\\bin\\chromedriver.exe");
-            //driver = new ChromeDriver();
-            //System.setProperty("webdriver.edge.driver", "D:\\Guru99\\bin\\msedgedriver.exe");
-            //driver = new EdgeDriver();
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
-    }
-
-    /*@Parameters({"Port"})
-    @BeforeClass
-    public void initiateDriver(String Port) throws MalformedURLException {
-        if (Port.equalsIgnoreCase("9002")) {
-            driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), DesiredCapabilities.chrome());
-            driver.manage().window().maximize();
-        } else if (Port.equalsIgnoreCase("9003")) {
-            driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), DesiredCapabilities.firefox());
-            driver.manage().window().maximize();
-        } else {
-            driver = new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), DesiredCapabilities.operaBlink());
-            driver.manage().window().maximize();
         }
-    }*/
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    }
 
     /*@Parameters({"OSAndBrowser"})
     @BeforeClass

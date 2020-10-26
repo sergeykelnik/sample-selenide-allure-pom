@@ -1,27 +1,39 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite thread-count="4" name="Selenium Testing" parallel="tests">
+<suite thread-count="5" name="Selenium Testing" parallel="tests">
+
     <test name="Chrome Test">
         <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="Tests"/>
         </classes>
     </test>
+
     <test name="Firefox Test">
         <parameter name="browser" value="Firefox"/>
         <classes>
             <class name="Tests"/>
         </classes>
     </test>
+
     <test name="Edge Test">
         <parameter name="browser" value="Edge"/>
         <classes>
             <class name="Tests"/>
         </classes>
     </test>
+
     <test name="IE Test">
         <parameter name="browser" value="IE"/>
         <classes>
             <class name="Tests"/>
         </classes>
     </test>
+
+    <test name="Opera Test">
+        <parameter name="browser" value="Opera"/>
+        <classes>
+            <class name="Tests"/>
+        </classes>
+    </test>
+
 </suite>

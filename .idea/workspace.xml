@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3faadf8b-ea80-4526-879e-35003841ff39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PhonePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ComparePopUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WelcomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MobilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MobilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MobilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WelcomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +37,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1jPTnKunsReg9rmU4hCgNjzpud4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -73,17 +74,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Guru99New" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Guru99New" />
       <option name="PACKAGE_NAME" value="" />
@@ -95,11 +85,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.day1Test" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.day3Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Guru99New" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="day1Test" />
+      <option name="METHOD_NAME" value="day3Test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -107,11 +97,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.day2Test" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Tests.day4Test (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Guru99New" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="day4Test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="3" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.day4Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Guru99New" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="day2Test" />
+      <option name="METHOD_NAME" value="day4Test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -122,10 +126,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.D:/Guru99New/testng.xml" />
+        <item itemvalue="TestNG.Tests.day4Test" />
+        <item itemvalue="TestNG.Tests.day4Test (1)" />
+        <item itemvalue="TestNG.Tests.day3Test" />
         <item itemvalue="TestNG.Tests" />
-        <item itemvalue="TestNG.Tests.day2Test" />
-        <item itemvalue="TestNG.Tests.day1Test" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603704892783</updated>
       <workItem from="1603704898576" duration="11907000" />
-      <workItem from="1603726627483" duration="5121000" />
+      <workItem from="1603726627483" duration="19173000" />
     </task>
     <servers />
   </component>
@@ -159,5 +163,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
