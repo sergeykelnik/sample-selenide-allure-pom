@@ -1,50 +1,31 @@
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+package guru.selenium;
+
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import static com.codeborne.selenide.Selenide.clearBrowserCookies;
+import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Configuration.baseUrl;
 
 public class Tests extends BaseTest {
 
-    HomePage homePage;
-    MobilePage mobilePage;
-    PhonePage phonePage;
-    ShoppingCart shoppingCart;
-    ComparePopUp comparePopUp;
+    private HomePage homePage;
+    private MobilePage mobilePage;
+    private PhonePage phonePage;
+    private ShoppingCart shoppingCart;
+    private ComparePopUp comparePopUp;
 
     @BeforeMethod
     public void beforeMethod() {
-        driver.manage().deleteAllCookies();
-        driver.get("http://live.demoguru99.com/index.php/");
+        clearBrowserCookies();
+        homePage = open(baseUrl, HomePage.class);
     }
 
-    @AfterMethod
-    public void screenShot(ITestResult result) {
-        if (ITestResult.FAILURE == result.getStatus()) {
-            try {
-                TakesScreenshot screenshot = (TakesScreenshot) driver;
-                String timestamp = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
-                File src = screenshot.getScreenshotAs(OutputType.FILE);
-                FileUtils.copyFile(src, new File("target/screenshots/screenshot_" + timestamp + ".png"));
-                System.out.println("Successfully captured a screenshot");
-            } catch (Exception e) {
-                System.out.println("Exception while taking screenshot " + e.getMessage());
-            }
-        }
-    }
-
-    //@Ignoreh
+    //@Ignore
     @Test(priority = 1)
     public void day1Test() {
-        homePage = new HomePage(driver);
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(homePage.getPageTitle(), "Home page");
         mobilePage = homePage.clickMobileLink();
@@ -59,7 +40,6 @@ public class Tests extends BaseTest {
     //@Ignore
     @Test(priority = 2)
     public void day2Test() {
-        homePage = new HomePage(driver);
         mobilePage = homePage.clickMobileLink();
         String priceOnMobilePage = mobilePage.getPhonePrice("iphone");
         phonePage = mobilePage.getPhoneLink("iphone");
@@ -71,7 +51,6 @@ public class Tests extends BaseTest {
     //@Ignore
     @Test(priority = 3)
     public void day3Test() {
-        homePage = new HomePage(driver);
         mobilePage = homePage.clickMobileLink();
         shoppingCart = mobilePage.clickBuyButton("sony");
         shoppingCart.updateQtyTo("1000");
@@ -89,13 +68,12 @@ public class Tests extends BaseTest {
     //@Ignore
     @Test(priority = 4)
     public void day4Test() {
-        homePage = new HomePage(driver);
         mobilePage = homePage.clickMobileLink();
         comparePopUp = mobilePage.compareTwoPhones("sony", "iphone", "");
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(comparePopUp.getPageHeaderMessage(), "COMPARE PRODUCTS");
         softAssert.assertEquals(comparePopUp.getPhoneList().get(0).getText(), "SONY XPERIA");
-        softAssert.assertEquals(comparePopUp.getPhoneList().get(1).getText(), "IPHONE");
+        softAssert.assertEquals(comparePopUp.getPhoneList().get(1).getText(), "IPHONE~");
         softAssert.assertAll();
     }
 }
