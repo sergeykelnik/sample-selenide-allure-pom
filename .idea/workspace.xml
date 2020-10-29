@@ -2,88 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3faadf8b-ea80-4526-879e-35003841ff39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/allure-results/0525e797-1341-4db3-b9b4-d8ba4014741c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/066ef455-a38b-43b6-adc6-c4fe145009c3-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0a948a85-d031-46b5-9660-4c94e265e22f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/13b47cf1-f14b-4c42-bab0-171c79fe7655-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/176f3912-076f-4416-8307-b34a8f6e52c9-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/20e7ccdc-724e-4977-b558-c2621d69502e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/26f0210d-b0fb-4d8e-a72a-590147846df5-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/28d1880f-63e3-49f2-8d4c-d9571726f47c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2a1957db-31bd-4b15-9844-887ae6237c2f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/3e916f5a-578a-48b3-a057-de5ad90cc8c1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/47378c98-9167-43fa-bbd7-5981252af9e1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/54e6fb7b-5958-49bd-a361-ed6a8337846b-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6b6a6419-9c6c-4022-82ec-c364a330de97-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7df962af-77f4-4250-b5fc-08e8c1cb5b93-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/aa1a1338-f448-4edd-8e90-cc36685fd04e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/aea977a0-159d-43c5-aac1-79a5c1975562-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b550fb36-cd15-4060-9ac6-098dc6c9d75a-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b63c66e0-5277-4195-a7ef-7e8fb38e72f3-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c08ce5ae-d86c-4258-81a6-634ff2d99b76-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c1324764-ae88-481c-a88c-6818a9dc0c13-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/d84028b1-c1dd-44c3-be68-238866220998-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ea906c84-e066-493d-92ed-f1c8964b7e28-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f098a3d6-cdbc-4f45-89f1-72fb78fe5b26-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f6883e15-7b1d-46b2-b004-fb927da5c404-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603840988848.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603840988848.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841025049.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841025049.1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841039368.2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841039368.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841050127.3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841050127.3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841065049.4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841065049.4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841090345.5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841090345.5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841099597.6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841099597.6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841116473.7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841116473.7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841482486.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841482486.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841483146.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841483146.1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841879905.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841879905.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841883675.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1603841883675.1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603841236639_10644_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603841836255_3460_15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603841836277_3460_16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603841836307_3460_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603841983574_14092_15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603841983574_14092_16.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603841983589_14092_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603842192784_6484_1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603842324621_516_1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603842354459_10700_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603842416917_5772_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603842488676_12992_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603842522117_14552_14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/webdriver.1603843407787_12180_15.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/ComparePopUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/MobilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/PhonePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/AnnotationTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/Retry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/TestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/CreateAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/MyDashboradPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/WishListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/PhoneCategoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/TVCategoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/ProductDetailsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/TVDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ComparePopUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MobilePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PhonePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ShoppingCart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/ComparePopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/ComparePopUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/MobilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/ProductCategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/PhonePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/PhoneDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/AnnotationTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/AnnotationTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/Retry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/Retry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,7 +59,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Guru99New" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -128,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="guru.selenium" />
       <recent name="common" />
       <recent name="utils" />
     </key>
@@ -153,59 +94,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Guru99New/testng.xml">
-    <configuration name="D:/Guru99New/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Guru99New" />
+  <component name="RunManager">
+    <configuration name="D:/Guru99NewSelenide/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Guru99" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.day1Test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Guru99" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guru.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guru.selenium" />
-      <option name="MAIN_CLASS_NAME" value="guru.selenium.Tests" />
-      <option name="METHOD_NAME" value="day1Test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.day3Test (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Guru99" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="guru.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="guru.selenium" />
-      <option name="MAIN_CLASS_NAME" value="guru.selenium.Tests" />
-      <option name="METHOD_NAME" value="day3Test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.day4Test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Guru99New" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="common.Tests" />
-      <option name="METHOD_NAME" value="day4Test" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -228,10 +128,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/Guru99New/testng.xml" />
-        <item itemvalue="TestNG.Tests.day1Test" />
-        <item itemvalue="TestNG.Tests.day3Test (1)" />
-        <item itemvalue="TestNG.Tests.day4Test" />
+        <item itemvalue="TestNG.D:/Guru99NewSelenide/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -255,6 +152,7 @@
       <workItem from="1603837200615" duration="7000" />
       <workItem from="1603837458015" duration="6150000" />
       <workItem from="1603877092947" duration="228000" />
+      <workItem from="1603960687491" duration="26553000" />
     </task>
     <servers />
   </component>

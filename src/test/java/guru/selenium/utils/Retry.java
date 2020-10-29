@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 public class Retry implements IRetryAnalyzer
 {
 
-    private static int maxTry = 1; //Run the failed test 2 times //changed to 0
+    private static int maxTry = 0; //Run the failed test 2 times //changed to 0
     private int count = 0;
 
     @Override

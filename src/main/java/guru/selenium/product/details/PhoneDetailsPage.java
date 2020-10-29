@@ -1,10 +1,10 @@
-package guru.selenium;
+package guru.selenium.product.details;
 
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class PhonePage {
+public class PhoneDetailsPage {
 
     private SelenideElement phonePrice = $(".price");
 

@@ -7,6 +7,7 @@
 target
 build
 allure-report
+allure-results
 
 # BlueJ files
 *.ctxt

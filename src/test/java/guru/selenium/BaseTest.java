@@ -1,38 +1,55 @@
 package guru.selenium;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.testng.annotations.*;
 
-import static com.codeborne.selenide.Browsers.*;
+import static com.codeborne.selenide.Browsers.CHROME;
+import static com.codeborne.selenide.Browsers.FIREFOX;
 import static com.codeborne.selenide.Configuration.baseUrl;
 
-public class BaseTest {
+public abstract class BaseTest {
 
     @Parameters({"browser"})
-    @BeforeSuite
-    public void initiateDriver(@Optional("Chrome") String browser) {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
-        Configuration.reportsFolder = "target/surefire-reports/screenshots";
-        Configuration.savePageSource = false;
+    @BeforeClass
+    public void beforeClass(String browser) {
         Configuration.browserSize = "1920x1080";
-        Configuration.timeout = 5000;
-        baseUrl = "http://live.demoguru99.com/index.php/";
+        baseUrl = "http://live.demoguru99.com/";
         if (browser.equalsIgnoreCase("Chrome")) {
-            Configuration.browser = CHROME;
-            //Configuration.remote = "http:localhost:4444/wd/hub";
+            Configuration.browser = "firefox";
+            //WebDriverManager.chromedriver().setup();
+            //WebDriverRunner.setWebDriver(new ChromeDriver());
+            //WebDriverRunner.getWebDriver().manage().window().maximize();
+
         } else if (browser.equalsIgnoreCase("Firefox")) {
-            Configuration.browser = FIREFOX;
-            //Configuration.remote = "http:localhost:4444/wd/hub";
-        } else if (browser.equalsIgnoreCase("Opera")) {
-            Configuration.browser = OPERA;
-            //Configuration.remote = "http:localhost:4444/wd/hub";
+            Configuration.browser = "firefox";
+            //WebDriverManager.firefoxdriver().setup();
+            //WebDriverRunner.setWebDriver(new FirefoxDriver());
+            //WebDriverRunner.getWebDriver().manage().window().maximize();
+
         } else if (browser.equalsIgnoreCase("Edge")) {
-            Configuration.browser = EDGE;
+            //WebDriverManager.edgedriver().setup();
+            //WebDriverRunner.setWebDriver(new EdgeDriver());
+            //WebDriverRunner.getWebDriver().manage().window().maximize();
+
+        } else if (browser.equalsIgnoreCase("Opera")) {
+            //WebDriverManager.operadriver().setup();
+            //WebDriverRunner.setWebDriver(new OperaDriver());
+            //WebDriverRunner.getWebDriver().manage().window().maximize();
+
         } else if (browser.equalsIgnoreCase("IE")) {
-            System.setProperty("wdm.architecture", "X32");
-            Configuration.browser = IE;
+            //WebDriverManager.iedriver().arch32();
+            //WebDriverManager.iedriver().setup();
+            //WebDriverRunner.setWebDriver(new InternetExplorerDriver());
+            //WebDriverRunner.getWebDriver().manage().window().maximize();
         }
     }
 
@@ -60,5 +77,10 @@ public class BaseTest {
 
             driver = new RemoteWebDriver(new URL(URL), caps);
         }
+    }*/
+
+    /*@AfterClass
+    public void tearDown() {
+        WebDriverRunner.getWebDriver().quit();
     }*/
 }

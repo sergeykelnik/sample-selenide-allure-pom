@@ -37,7 +37,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        //takeScreenshot();
+        takeScreenshot();
         System.out.println(getTestMethodName(iTestResult) + " failed");
     }
 }

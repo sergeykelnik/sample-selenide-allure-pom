@@ -1,3 +1,4 @@
 package guru.selenium;
 
-public class ComparePopUp extends BasePage {}
+public class ComparePopUp extends BasePage {
+}

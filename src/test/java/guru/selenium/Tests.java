@@ -1,21 +1,37 @@
 package guru.selenium;
 
+import guru.selenium.product.categories.PhoneCategoryPage;
+import guru.selenium.product.categories.TVCategoryPage;
+import guru.selenium.product.details.PhoneDetailsPage;
+import guru.selenium.product.details.TVDetailsPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import static com.codeborne.selenide.Selenide.clearBrowserCookies;
-import static com.codeborne.selenide.Selenide.open;
+import java.util.Random;
+
 import static com.codeborne.selenide.Configuration.baseUrl;
+import static com.codeborne.selenide.Selenide.*;
 
 public class Tests extends BaseTest {
 
     private HomePage homePage;
-    private MobilePage mobilePage;
-    private PhonePage phonePage;
+    private PhoneCategoryPage phoneCategoryPage;
+    private TVCategoryPage tvCategoryPage;
+    private PhoneDetailsPage phoneDetailsPage;
+    private TVDetailsPage tvDetailsPage;
     private ShoppingCart shoppingCart;
     private ComparePopUp comparePopUp;
+    private LoginPage loginPage;
+    private CreateAccountPage createAccountPage;
+    private MyDashboradPage myDashboradPage;
+    private WishListPage wishListPage;
+
+    Random random = new Random();
+    int number = random.nextInt(100000);
+    String randoms = String.format("%03d", number);
 
     @BeforeMethod
     public void beforeMethod() {
@@ -28,31 +44,32 @@ public class Tests extends BaseTest {
     public void day1Test() {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(homePage.getPageTitle(), "Home page");
-        mobilePage = homePage.clickMobileLink();
-        softAssert.assertEquals(mobilePage.getPageTitle(), "Mobile");
-        mobilePage.sortByName();
-        softAssert.assertEquals(mobilePage.getPhoneList().get(0).getText(), "IPHONE");
-        softAssert.assertEquals(mobilePage.getPhoneList().get(1).getText(), "SAMSUNG GALAXY");
-        softAssert.assertEquals(mobilePage.getPhoneList().get(2).getText(), "SONY XPERIA");
+        phoneCategoryPage = homePage.clickMobileLink();
+        softAssert.assertEquals(phoneCategoryPage.getPageTitle(), "Mobile");
+        phoneCategoryPage.sortBy("Name");
+        sleep(1000);
+        softAssert.assertEquals(phoneCategoryPage.getPhoneList().get(0).getText(), "IPHONE");
+        softAssert.assertEquals(phoneCategoryPage.getPhoneList().get(1).getText(), "SAMSUNG GALAXY");
+        softAssert.assertEquals(phoneCategoryPage.getPhoneList().get(2).getText(), "SONY XPERIA~");
         softAssert.assertAll();
     }
 
-    //@Ignore
+    @Ignore
     @Test(priority = 2)
     public void day2Test() {
-        mobilePage = homePage.clickMobileLink();
-        String priceOnMobilePage = mobilePage.getPhonePrice("iphone");
-        phonePage = mobilePage.getPhoneLink("iphone");
-        String priceOnPhonePage = phonePage.getPhonePrice();
+        phoneCategoryPage = homePage.clickMobileLink();
+        String priceOnMobilePage = phoneCategoryPage.getPrice("iphone");
+        phoneDetailsPage = phoneCategoryPage.getLink("iphone");
+        String priceOnPhonePage = phoneDetailsPage.getPhonePrice();
         Assert.assertEquals(priceOnMobilePage, priceOnPhonePage);
         System.out.println(priceOnMobilePage + " equals to " + priceOnPhonePage);
     }
 
-    //@Ignore
+    @Ignore
     @Test(priority = 3)
     public void day3Test() {
-        mobilePage = homePage.clickMobileLink();
-        shoppingCart = mobilePage.clickBuyButton("sony");
+        phoneCategoryPage = homePage.clickMobileLink();
+        shoppingCart = phoneCategoryPage.clickBuyButton("sony");
         shoppingCart.updateQtyTo("1000");
         SoftAssert softAssert = new SoftAssert();
         String errorMessageTop = shoppingCart.getErrorMessageTop();
@@ -65,15 +82,37 @@ public class Tests extends BaseTest {
         softAssert.assertAll();
     }
 
-    //@Ignore
+    @Ignore
     @Test(priority = 4)
     public void day4Test() {
-        mobilePage = homePage.clickMobileLink();
-        comparePopUp = mobilePage.compareTwoPhones("sony", "iphone", "");
+        phoneCategoryPage = homePage.clickMobileLink();
+        comparePopUp = phoneCategoryPage.compareTwoItems("sony", "iphone", "");
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(comparePopUp.getPageHeaderMessage(), "COMPARE PRODUCTS");
         softAssert.assertEquals(comparePopUp.getPhoneList().get(0).getText(), "SONY XPERIA");
-        softAssert.assertEquals(comparePopUp.getPhoneList().get(1).getText(), "IPHONE~");
+        softAssert.assertEquals(comparePopUp.getPhoneList().get(1).getText(), "IPHONE");
+        switchTo().window("Mobile");
         softAssert.assertAll();
+    }
+
+    @Ignore
+    @Test(priority = 5)
+    public void day5Test() {
+        loginPage = homePage.goToMyAccount();
+        createAccountPage = loginPage.clickNewAccountButton();
+        myDashboradPage = createAccountPage.fillOutRegistrationForm(
+                "Name",
+                "Middlename",
+                "Surname",
+                "mail" + randoms + "@mail.ee",
+                "123456",
+                true);
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(myDashboradPage.getSuccessMessage(), "Thank you for registering with Main Website Store.");
+        tvCategoryPage = homePage.clickTVLink();
+        wishListPage = tvCategoryPage.addItemToWishList("lg");
+        wishListPage.clickShareWishList();
+        wishListPage.fillOutSubmitWishList("galowor896@wpfoo.com", "Share message!");
+        softAssert.assertEquals(wishListPage.getSuccessMessage(), "Your Wishlist has been shared.");
     }
 }
