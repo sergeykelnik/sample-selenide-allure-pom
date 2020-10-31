@@ -2,27 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3faadf8b-ea80-4526-879e-35003841ff39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/CreateAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/MyDashboradPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/WishListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/PhoneCategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/TVCategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/ProductDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/TVDetailsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/bin/allure" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/bin/allure.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/config/allure-cucumber.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/config/allure-junit.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/config/allure.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/lib/config/jetty-logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/lib/config/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/behaviors-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/behaviors-plugin/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/custom-logo-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/custom-logo-plugin/static/custom-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/custom-logo-plugin/static/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/jira-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/junit-xml-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/packages-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/packages-plugin/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/screen-diff-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/screen-diff-plugin/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/screen-diff-plugin/static/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/trx-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/xctest-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/xray-plugin/allure-plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.allure/allure-2.8.1/plugins/xunit-xml-plugin/allure-plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/ComparePopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/ComparePopUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/MobilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/ProductCategoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/PhonePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/PhoneDetailsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/AnnotationTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/AnnotationTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/Retry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/Retry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/TestListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/TestListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/ComparePopUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/ComparePopUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/CreateAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/CreateAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/MyDashboradPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/MyDashboradPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/WishListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/WishListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/PhoneCategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/product/categories/PhoneCategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/ProductCategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/product/categories/ProductCategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/product/categories/TVCategoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/product/categories/TVCategoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/PhoneDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/product/details/PhoneDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/ProductDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/product/details/ProductDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/guru/selenium/product/details/TVDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/guru/selenide/product/details/TVDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenide/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenide/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/AnnotationTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenide/utils/AnnotationTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/Retry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/guru/selenide/utils/Retry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/guru/selenium/utils/TestListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +83,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Guru99New" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sample-Selenide-Maven-TestNG-Allure-project" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -94,7 +118,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.D:/Guru99NewSelenide/testng.xml">
     <configuration name="D:/Guru99NewSelenide/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Guru99" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -152,7 +176,11 @@
       <workItem from="1603837200615" duration="7000" />
       <workItem from="1603837458015" duration="6150000" />
       <workItem from="1603877092947" duration="228000" />
-      <workItem from="1603960687491" duration="26553000" />
+      <workItem from="1603960687491" duration="28127000" />
+      <workItem from="1603996792535" duration="2091000" />
+      <workItem from="1604001233965" duration="608000" />
+      <workItem from="1604046780740" duration="795000" />
+      <workItem from="1604142139146" duration="540000" />
     </task>
     <servers />
   </component>
