@@ -1,4 +1,4 @@
-package guru.selenium.product.details;
+package guru.selenide.product.details;
 
 import com.codeborne.selenide.SelenideElement;
 

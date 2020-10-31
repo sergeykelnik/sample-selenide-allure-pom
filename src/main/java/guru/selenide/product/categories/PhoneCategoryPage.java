@@ -1,10 +1,9 @@
-package guru.selenium.product.categories;
+package guru.selenide.product.categories;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
-import guru.selenium.ComparePopUp;
-import guru.selenium.ShoppingCart;
-import guru.selenium.product.details.PhoneDetailsPage;
+import guru.selenide.ComparePopUp;
+import guru.selenide.ShoppingCart;
+import guru.selenide.product.details.PhoneDetailsPage;
 import org.openqa.selenium.NoSuchElementException;
 
 import static com.codeborne.selenide.Selenide.*;

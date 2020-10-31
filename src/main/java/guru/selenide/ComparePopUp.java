@@ -1,4 +1,4 @@
-package guru.selenium;
+package guru.selenide;
 
 public class ComparePopUp extends BasePage {
 }

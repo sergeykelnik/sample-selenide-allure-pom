@@ -1,11 +1,10 @@
-package guru.selenium;
+package guru.selenide;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import guru.selenium.product.categories.PhoneCategoryPage;
-import guru.selenium.product.categories.ProductCategoryPage;
-import guru.selenium.product.categories.TVCategoryPage;
+import guru.selenide.product.categories.PhoneCategoryPage;
+import guru.selenide.product.categories.TVCategoryPage;
 
 import static com.codeborne.selenide.Selenide.*;
 

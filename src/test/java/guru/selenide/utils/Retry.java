@@ -1,4 +1,4 @@
-package guru.selenium.utils;
+package guru.selenide.utils;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

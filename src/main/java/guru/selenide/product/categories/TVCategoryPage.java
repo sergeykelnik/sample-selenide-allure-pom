@@ -1,7 +1,7 @@
-package guru.selenium.product.categories;
+package guru.selenide.product.categories;
 
 import com.codeborne.selenide.SelenideElement;
-import guru.selenium.WishListPage;
+import guru.selenide.WishListPage;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;

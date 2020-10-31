@@ -1,22 +1,13 @@
-package guru.selenium;
+package guru.selenide;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import io.qameta.allure.selenide.AllureSelenide;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
 import org.testng.annotations.*;
 
 import static com.codeborne.selenide.Browsers.CHROME;
 import static com.codeborne.selenide.Browsers.FIREFOX;
 import static com.codeborne.selenide.Configuration.baseUrl;
 
-public abstract class BaseTest {
+public class BaseTest {
 
     @Parameters({"browser"})
     @BeforeClass
@@ -24,13 +15,13 @@ public abstract class BaseTest {
         Configuration.browserSize = "1920x1080";
         baseUrl = "http://live.demoguru99.com/";
         if (browser.equalsIgnoreCase("Chrome")) {
-            Configuration.browser = "firefox";
+            Configuration.browser = CHROME;
             //WebDriverManager.chromedriver().setup();
             //WebDriverRunner.setWebDriver(new ChromeDriver());
             //WebDriverRunner.getWebDriver().manage().window().maximize();
 
         } else if (browser.equalsIgnoreCase("Firefox")) {
-            Configuration.browser = "firefox";
+            Configuration.browser = FIREFOX;
             //WebDriverManager.firefoxdriver().setup();
             //WebDriverRunner.setWebDriver(new FirefoxDriver());
             //WebDriverRunner.getWebDriver().manage().window().maximize();

@@ -1,11 +1,14 @@
-package guru.selenium;
+package guru.selenide;
 
-import guru.selenium.product.categories.PhoneCategoryPage;
-import guru.selenium.product.categories.TVCategoryPage;
-import guru.selenium.product.details.PhoneDetailsPage;
-import guru.selenium.product.details.TVDetailsPage;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import guru.selenide.product.categories.PhoneCategoryPage;
+import guru.selenide.product.categories.TVCategoryPage;
+import guru.selenide.product.details.PhoneDetailsPage;
+import guru.selenide.product.details.TVDetailsPage;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -32,6 +35,11 @@ public class Tests extends BaseTest {
     Random random = new Random();
     int number = random.nextInt(100000);
     String randoms = String.format("%03d", number);
+
+    @BeforeTest
+    public void setUp() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+    }
 
     @BeforeMethod
     public void beforeMethod() {
