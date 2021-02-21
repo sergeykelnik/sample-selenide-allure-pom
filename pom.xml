@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>guru.selenide</groupId>
+    <groupId>Guru99NewSelenide</groupId>
     <artifactId>Guru99NewSelenide</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -15,7 +15,7 @@
     </properties>
 
     <name>Project Selenide + TestNG + Allure</name>
-    <description>Example usage of Selenide withAllure and TestNG</description>
+    <description>Example usage of Selenide withAllure and TestNG without PageObject</description>
 
     <dependencies>
         <dependency>
@@ -31,7 +31,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>5.15.1</version>
+            <version>5.18.1</version>
         </dependency>
     </dependencies>
 
