@@ -9,7 +9,6 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -58,11 +57,11 @@ public class Tests extends BaseTest {
         sleep(1000);
         softAssert.assertEquals(phoneCategoryPage.getPhoneList().get(0).getText(), "IPHONE");
         softAssert.assertEquals(phoneCategoryPage.getPhoneList().get(1).getText(), "SAMSUNG GALAXY");
-        softAssert.assertEquals(phoneCategoryPage.getPhoneList().get(2).getText(), "SONY XPERIA~");
+        softAssert.assertEquals(phoneCategoryPage.getPhoneList().get(2).getText(), "SONY XPERIA");
         softAssert.assertAll();
     }
 
-    @Ignore
+    //@Ignore
     @Test(priority = 2)
     public void day2Test() {
         phoneCategoryPage = homePage.clickMobileLink();
@@ -73,7 +72,7 @@ public class Tests extends BaseTest {
         System.out.println(priceOnMobilePage + " equals to " + priceOnPhonePage);
     }
 
-    @Ignore
+    //@Ignore
     @Test(priority = 3)
     public void day3Test() {
         phoneCategoryPage = homePage.clickMobileLink();
@@ -90,7 +89,7 @@ public class Tests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Ignore
+    //@Ignore
     @Test(priority = 4)
     public void day4Test() {
         phoneCategoryPage = homePage.clickMobileLink();
@@ -103,7 +102,7 @@ public class Tests extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Ignore
+    //@Ignore
     @Test(priority = 5)
     public void day5Test() {
         loginPage = homePage.goToMyAccount();
