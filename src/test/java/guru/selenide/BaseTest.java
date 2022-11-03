@@ -1,7 +1,9 @@
 package guru.selenide;
 
 import com.codeborne.selenide.Configuration;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import static com.codeborne.selenide.Browsers.CHROME;
 import static com.codeborne.selenide.Browsers.FIREFOX;
@@ -11,9 +13,9 @@ public class BaseTest {
 
     @Parameters({"browser"})
     @BeforeClass
-    public void beforeClass(String browser) {
-        Configuration.browserSize = "1920x1080";
-        baseUrl = "http://live.demoguru99.com/";
+    public void beforeClass(@Optional("chrome") String browser) {
+        Configuration.startMaximized = true;
+        baseUrl = "http://live.techpanda.org/";
         if (browser.equalsIgnoreCase("Chrome")) {
             Configuration.browser = CHROME;
             //WebDriverManager.chromedriver().setup();
